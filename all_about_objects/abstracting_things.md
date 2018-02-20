@@ -1,25 +1,5 @@
 ## Abstracting Things
 
-Abstracting things allows us to establishing a level of complexity on which a person interacts with the system. The more complex details are hidden below the current level. The user works with an idealized interface (usually well defined) and can add additional levels of functionality that would otherwise be too complex to handle.
-
-> The essence of abstractions is preserving information that is relevant in a given context, and forgetting information that is irrelevant in that context.
->
-> John V. Guttag (2013-01-18)
-
-Take for example a programmer that is developing a calculator application. This programmer might not be interested in the way numbers are represented in the underlying hardware (e.g. whether they're 16 bit or 32 bit integers). The boundary where those details have been suppressed, we can state that they have been abstracted away. The programmer now just has numbers with which he can work.
-
-All programming languages provide abstractions. The actual quality of the abstractions will determine the complexity of the problem you are able to solve. Try writing an MMORPG game using nothing but assembler.
-
-In fact assembly language is an abstraction for machine code which is an abstraction of the actual hardware of a computer system.
-
-![Assembler is an abstraction of Machine Code [^1]](img/assembler_abstraction.jpg)
-
-[^1]: Source http://www.androidauthority.com/assembly-language-and-machine-code-678230/
-
-Many imperative languages that followed (such as Fortran, C, Pascal, ...) were another level of abstraction introduced on top of the assembly language.
-
-![Multiple Layers of Abstraction](https://www.lucidchart.com/publicSegments/view/9795cc73-acd7-478a-a1e0-3bc66b19496c/image.png)
-
 So called imperative languages are a big improvement over the low-level assembly language. They do however still require that the programmer thinks in terms of the structure of the computer rather than in terms of the structure of the problem.
 
 Think for example about a simple program that can perform several operations on triangles. A simple C implementation may keep track of all the coordinates (x and y) of the triangle corners using arrays. The operations would be implemented using functions that take the necessary parameters or even act on global data and return a result or change the global data. Here we are storing data in arrays of a certain type and defining functions that can operate on that particular data.

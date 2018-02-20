@@ -1,0 +1,11 @@
+## Advantages of Abstraction
+
+For the most part, "knowing" in and of itself isn't necessarily bad, but "not knowing" can have its advantages. One of the main advantages of abstraction is that is let's us build complex systems much faster as we can rest our weary minds about the internals of the libraries, classes, functions, ... that can be used. If the standard libraries of C++ or the standard packages of Java were not there for us, we would still be coding on that first "hello world" program.
+
+Another advantage of abstraction is the fact that is decouples systems from each other and makes the separate components more maintainable. If you're writing a module in a system that interacts with another, not knowing about its internals means you will only write code in accordance to the interface or API that is externally available. This means less coupling among modules, creating code that is more maintainable.
+
+Let's say you are trying to work with a module that has some storage capability. The module provides functions for you to read and write to the storage. Because the module is open-source, you see that the underlying data structure is an array. You decide to bypass the functions given to you, and to directly manipulate the underlying array instead. Everything works just fine.
+
+Some months later, the author of the module decides that they want to use a better data structure, say a hash table, providing faster lookup capabilities. The developer changes the underlying data structure from an array to a hash table, and updates the read and write functions so they work with the new data structure. Since most users use those functions, they don't have to change their code at all. They enjoy the benefits of the updated data structure without touching a single line of code in their program.
+
+However, your code breaks, because it continues to assume that the internal data structure of the module is an array, which in fact no longer exists. If you still choose not to use the functions made available by the author, you'll have to find out how their hash table works, and to update your code accordingly. Of course, that might just break again when the author makes another performance breakthrough in his module.
