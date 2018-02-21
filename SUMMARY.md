@@ -2,7 +2,15 @@
 
 * [Introduction](README.md)
 
-### All about Objects
+### Abstraction
+
+* [Abstraction](abstraction/readme.md)
+* [What is abstraction](abstraction/what_is_abstraction.md)
+* [Programming Languages](abstraction/programming_languages.md)
+* [Advantages of Abstraction](abstraction/advantages_of_abstraction.md)
+* [Pseudo Code Example](abstraction/pseudo_code_example.md)
+
+<!-- ### All about Objects
 
 * [All About Objects](all_about_objects/readme.md)
 * [Abstracting Things](all_about_objects/abstracting_things.md)
@@ -10,7 +18,7 @@
 * [Hiding Implementation](all_about_objects/hiding_implementation.md)
 * [Reusing Implementation](all_about_objects/reusing_implementation.md)
 * [Reusing the Interface](all_about_objects/reusing_the_interface.md)
-* [Exercises](all_about_objects/exercises.md)
+* [Exercises](all_about_objects/exercises.md) -->
 
 
 <!-- ### Basics of Classes -->
