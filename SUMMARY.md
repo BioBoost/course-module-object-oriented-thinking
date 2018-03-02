@@ -10,16 +10,13 @@
 * [Advantages of Abstraction](abstraction/advantages_of_abstraction.md)
 * [Pseudo Code Example](abstraction/pseudo_code_example.md)
 
-<!-- ### All about Objects
+### All about Objects
 
 * [All About Objects](all_about_objects/readme.md)
-* [Abstracting Things](all_about_objects/abstracting_things.md)
+* [What are Objects](all_about_objects/what_are_objects.md)
+* [Classes](all_about_objects/classes.md)
 * [Interface of an Object](all_about_objects/interface_of_an_object.md)
-* [Hiding Implementation](all_about_objects/hiding_implementation.md)
-* [Reusing Implementation](all_about_objects/reusing_implementation.md)
-* [Reusing the Interface](all_about_objects/reusing_the_interface.md)
-* [Exercises](all_about_objects/exercises.md) -->
-
+* [Characteristics of OOP](all_about_objects/characteristics_of_oop.md)
 
 <!-- ### Basics of Classes -->
 
