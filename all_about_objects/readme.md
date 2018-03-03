@@ -8,5 +8,4 @@
 
 This chapter will give a detailed introduction in the concepts of object oriented thinking when using an object oriented programming (OOP) language such as Java or C++. This chapter will not include any language specific language examples. Everything will be language independent and supported using UML (Unified Modeling Language) class and object diagrams.
 
-![Keywords of OOP](img/keywords_of_oop.png)
-<!-- TODO: Replace this image with own -->
+<!-- TODO: Place a picture here with all keywords of OOP. Maybe even write it by hand. -->
