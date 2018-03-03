@@ -13,7 +13,9 @@ Basically one can state that something is an object if it has:
 
 ### Object Characteristics
 
-If you are reading this in a classroom, than take a look around you. Try to focus on a person in the room. She/he is the perfect example of an example. She/he has a name which uniquely identifies this person.
+If you are reading this in a classroom, than take a look around you. Try to focus on a person in the room. She/he is the perfect example of an object. First of all he/she has a name which uniquely identifies this person.
+
+![Characteristics of a Person](img/person_cartoon.jpg)
 
 Now try to identify some characteristics of this person. Some examples could be his/her:
 * name
@@ -30,7 +32,7 @@ Each object holds its own state. This means that you can have a person in the cl
 
 ### Object Behavior
 
-Take another look at the people in the classroom. What actions can a person perform ? He/she can:
+Take another look at someone in the classroom. What actions can a person perform ? He/she can:
 
 * walk
 * sleep
