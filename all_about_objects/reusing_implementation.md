@@ -26,7 +26,7 @@ An association represents a relationship between two or more objects where all o
 
 Let's take an example of relationship between Teacher and Student. Multiple students can associate with a single teacher and a single student can associate with multiple teachers. But there is no ownership between the objects and both have their own lifecycle. Both can be created and deleted independently.
 
-![Teacher has an Association with Student](https://www.lucidchart.com/publicSegments/view/916ed253-0b83-4803-a444-2b641858b638/image.png)
+![Teacher has an Association with Student](img/association.png)
 
 Another example could be an Employee who uses instances of the class Company Computer. While the computer objects are owned by the employee's company, he can make use of them.
 
