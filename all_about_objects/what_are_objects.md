@@ -32,12 +32,15 @@ Each object holds its own state. This means that you can have a person in the cl
 
 ### Object Behavior
 
+![Behavior of a Person](img/person_methods.jpg)
+
 Take another look at someone in the classroom. What actions can a person perform ? He/she can:
 
 * walk
 * sleep
 * talk
 * eat something
+* wake up
 * stand up
 * ...
 
