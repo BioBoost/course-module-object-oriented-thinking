@@ -20,14 +20,6 @@
 * [Reusing Implementation](all_about_objects/reusing_implementation.md)
 * [Characteristics of OOP](all_about_objects/characteristics_of_oop.md)
 
-<!-- ### Basics of Classes -->
-
-<!-- * [Basics of Classes](basics_of_classes/basics_of_classes.md) -->
-<!-- * [Summary](basics_of_classes/summary.md) -->
-<!-- * [Quiz](basics_of_classes/quiz.md) -->
-<!-- * [Exercises](basics_of_classes/exercises.md) -->
-
-
 <!-- ### Composition -->
 
 <!-- * [Composition](composition/composition.md) -->
