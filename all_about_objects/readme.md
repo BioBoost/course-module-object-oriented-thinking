@@ -1,5 +1,6 @@
 [All About Objects](../all_about_objects/readme.md)
 * [What are Objects](../all_about_objects/what_are_objects.md)
+* [Why OOP](../all_about_objects/why_oop.md)
 * [Classes](../all_about_objects/classes.md)
 * [Interface of an Object](../all_about_objects/interface_of_an_object.md)
 * [Reusing Implementation](../all_about_objects/reusing_implementation.md)
