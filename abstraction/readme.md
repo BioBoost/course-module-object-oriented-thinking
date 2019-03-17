@@ -43,7 +43,9 @@ In fact assembly language is an abstraction for machine code which is an abstrac
 
 Many imperative languages that followed (such as Fortran, C, Pascal, ...) were another level of abstraction introduced on top of the assembly language. So basically a computer application is nothing but layer upon layer upon layer of abstraction.
 
-![Layer upon Layer of Abstraction](img/layer_upon_layer.png)
+![Layer upon Layer of Abstraction](img/layer_upon_layer.png)Nic
+
+A nice video about abstraction can be found at Computerphile: [https://www.youtube.com/watch?v=ycl1VL0q1rs](https://www.youtube.com/watch?v=ycl1VL0q1rs).
 
 ## Advantages of Abstraction
 
