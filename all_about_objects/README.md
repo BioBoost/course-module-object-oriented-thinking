@@ -4,6 +4,8 @@ title: All About Objects
 
 # All About Objects
 
+<!-- This chapter needs a serious refactor -->
+
 This chapter will give a detailed introduction in the concepts of object oriented thinking when using an object oriented programming (OOP) language such as Java or C++. This chapter will not include any language specific language examples. Everything will be language independent and supported using UML (Unified Modeling Language) class and object diagrams.
 
 <!-- TODO: Place a picture here with all keywords of OOP. Maybe even write it by hand. -->
@@ -16,18 +18,20 @@ Sounds like a complex question, but the answer is actually really simple. Humans
 
 Actually **all things around us can be considered objects**: a chair, a table, a monster truck, an electricity outlet, a window, a student, a teacher, ... but also more abstract things such as a bank account, a computer file, a chemical element, ... When thinking in terms of objects in software design we will find such objects as an email, a browser, a text message, a mouse, an icon on your desktop, ... All these things are examples of objects.
 
-Basically one can state that something is an object if it has:
-* **a name**;
-* certain **characteristics**;
-* certain **actions** that can be done to it or can be accomplished with it.
+Basically one can state that something is an object if:
+
+* it is **unique**;
+* has certain **characteristics**;
+* has certain **actions** that can be done to it or can be accomplished with it.
 
 ### Object Characteristics
 
 If you are reading this in a classroom, than take a look around you. Try to focus on a person in the room. She/he is the perfect example of an object. First of all he/she has a name which uniquely identifies this person.
 
-![Characteristics of a Person](img/person_cartoon.jpg)
+![Characteristics of a Person](./img/person_cartoon.jpg)
 
 Now try to identify some characteristics of this person. Some examples could be his/her:
+
 * name
 * age
 * eye color
@@ -42,7 +46,7 @@ Each object holds its own state. This means that you can have a person in the cl
 
 ### Object Behavior
 
-![Behavior of a Person](img/person_methods.jpg)
+![Behavior of a Person](./img/person_methods.jpg)
 
 Take another look at someone in the classroom. What actions can a person perform ? He/she can:
 
@@ -66,7 +70,7 @@ Interaction between objects in a software program is accomplished by an object s
 
 Take a look at the following example. It defines two people (objects): Xander and Elysa. Both have their own state (attributes or data) and have certain actions that they can perform (run, sleep, eat, ...). The diagram shows that Elysa is sending a message to (calling the awake() method) Xander who is asleep.
 
-![Objects sending messages](img/objects_sending_messages.png)
+![Objects sending messages](./img/objects_sending_messages.png)
 
 While the diagram above is no official standard it does however places a base for the UML standard that will later be used in this course. Note how attributes and methods are separated. It also shows some programming basics such as the parentheses after a name of a method or the naming conventions of the attributes.
 
@@ -74,9 +78,9 @@ While the diagram above is no official standard it does however places a base fo
 
 All this leads to a more formal definition of an object:
 
-> #### Definition::Object
->
->  An object is an entity that contains both **data** (*attributes*) and **behavior** (*methods*). Objects exchange information with each other and request actions from one another by sending messages. In code this is achieved by calling the methods of the objects. These methods can act upon the current state of the object and also make changes to it.
+::: tip Definition of an Object
+An object is an entity that contains both data (attributes) and behavior (methods). Objects exchange information with each other and request actions from one another by sending messages. In code this is achieved by calling the methods of the objects. These methods can act upon the current state of the object and also make changes to it.
+:::
 
 ### Quick Summary
 
@@ -92,9 +96,9 @@ All this leads to a more formal definition of an object:
 
 Before the mid 1970s software engineers followed a programming methodology called **structured programming**.
 
-> #### Info::Structured Programming
-
-> Structured programming is a programming paradigm aimed at improving the clarity, quality, and development time of a computer program by making extensive use of subroutines, block structures, for and while loops—in contrast to using simple tests and jumps such as the `goto` statement, which could lead to "spaghetti code" that is difficult to follow and maintain. It emerged in the late 1950s with the appearance of the ALGOL 58 and ALGOL 60 programming languages, with the latter including support for block structures.
+::: tip Structured Programming
+Structured programming is a programming paradigm aimed at improving the clarity, quality, and development time of a computer program by making extensive use of subroutines, block structures, for and while loops—in contrast to using simple tests and jumps such as the `goto` statement, which could lead to "spaghetti code" that is difficult to follow and maintain. It emerged in the late 1950s with the appearance of the ALGOL 58 and ALGOL 60 programming languages, with the latter including support for block structures.
+:::
 
 The structured paradigm offered a simple approach to software engineering by providing a simple view on a software product. An application was considered to be either *operation oriented* or *data oriented*. In the case of operation oriented applications the focus lies on the functions that the application performs as where data oriented focused on the data being handled. However as software development began to evolve and applications became more complex, developers realized that this approach was to narrow sighted.
 
@@ -112,13 +116,13 @@ Now the user is able to select what operation to perform on the list of numbers:
 
 Taking the structured programming approach the data and operations would be totally separate from each other as demonstrated in the diagram below.
 
-![Structured Programming Approach](img/structured_programming_array.png)
+![Structured Programming Approach](./img/structured_programming_array.png)
 
 As can be seen above, all data required for the operations need to be passed to the functions or they need to be made globally available which is even worse.
 
 Now taking the object oriented approach a nice independent entity called `ListOfNumbers` can be engineered. It holds both the integers and the number of elements internally. Several actions can be requested from such an object such as `sort()`, `reverse()`, `print()`, ... Take note that the data does not need to be passed to the actions as they already have access to it as the internal state of the object.
 
-![Object Oriented Approach](img/oop_list_of_numbers.png)
+![Object Oriented Approach](./img/oop_list_of_numbers.png)
 
 While not only cleaner, more logical and maintainable, the object oriented approach also provides us with a lot more options for reusing code.
 
@@ -132,7 +136,7 @@ Object do not just sprout from memory when needed. In a computer program, object
 
 The fundamental keyword `class` was first used in Simula-67, the first object oriented programming language, and allowed for the creation of new types in the program.
 
-![Objects are created based on a blueprint](img/object_blueprint.png)
+![Objects are created based on a blueprint](./img/object_blueprint.png)
 
 The number of objects that can be **instantiated** from a class is only limited by the memory available in the system the program is running on.
 
@@ -140,15 +144,15 @@ Metaphorically you can compare creating objects with baking cookies.
 
 The dough we use is basically the computer memory we have at our disposal.
 
-![Cookie Dough - Computer memory](img/dough.jpg)
+![Cookie Dough - Computer memory](./img/dough.jpg)
 
 The template for our cookie is the class.
 
-![Cookie Template - Class](img/template.jpg)
+![Cookie Template - Class](./img/template.jpg)
 
 The resulting cookies are the instances of the class called objects.
 
-![Baked Cookies - Object instances](img/cookies.jpg)
+![Baked Cookies - Object instances](./img/cookies.jpg)
 
 When we create objects we instantiate totally distinct instances of a class. **Each object contains its own copy of the data**. This means that if you change the data of one object, it will not affect the data of another object; at least not for primitive data types as we will see later on.
 
@@ -156,9 +160,9 @@ When we create objects we instantiate totally distinct instances of a class. **E
 
 All this leads to a more formal definition of a class:
 
-> #### Definition::Class
->
->  A class is a "group, set or kind sharing common attributes". They are the essential blueprints used to create unique objects from the class type. All objects created from a single class are called instances of that particular class.
+::: tip Class
+A class is a "group, set or kind sharing common attributes". They are the essential blueprints used to create unique objects from the class type. All objects created from a single class are called instances of that particular class.
+:::
 
 ## Interface of an Object
 
@@ -172,7 +176,7 @@ So summarized: a type (class) has a method associated with each the possible req
 
 Lets take a look at a simple example such as a light bulb. It might be represented as shown below.
 
-![A UML class diagram of a light bulb](img/methods_light_bulb_uml.png)
+![A UML class diagram of a light bulb](./img/methods_light_bulb_uml.png)
 
 The diagram above follows the UML standard (Unified Modeling Language). The diagram consists of three parts:
 
@@ -184,11 +188,13 @@ Except for the name of the class, the other parts of the diagram are optional an
 
 ## Reusing Implementation
 
+<!-- This section is probable not 100% correct -->
+
 Once a class has been created and hopefully tested it should ideally represent a useful unit of code.  In this case it begs to be reused and not go to waste. It also turns out that code reuse is one of the main advantages of object oriented programming.
 
-> #### Warning::Reuse and DRY
->
-> Code reuse is not, as some understand it to be (students in particular), the ability to be copy pasted from one part inside your program to another! This is actually *code duplication* and is considered bad practice. The DRYness (DRY - Don't Repeat Yourself) of once code is one of the indicators of the maintainability of that code.
+::: warning Reuse and DRY
+Code reuse is not, as some understand it to be (students in particular), the ability to be copy pasted from one part inside your program to another! This is actually *code duplication* and is considered bad practice. The DRYness (DRY - Don't Repeat Yourself) of once code is one of the indicators of the maintainability of that code.
+:::
 
 Multiple ways exist to reuse a class:
 
@@ -204,17 +210,17 @@ The simplest way to reuse a class is by creating objects from it and using those
 
 An association represents a relationship between two or more objects where all objects have their own lifecycle and there is no owner. The name of an association specifies the nature of relationship between objects. This is represented in UML by a solid line.
 
-> #### Info::Life Cycle
->
-> The life cycle of an object is the time between an object's creation and its destruction. Rules for object lifetime vary significantly between languages, in some cases between implementations of a given language, and lifetime of a particular object may vary from one run of the program to another.
+::: tip Life Cycle
+The life cycle of an object is the time between an object's creation and its destruction. Rules for object lifetime vary significantly between languages, in some cases between implementations of a given language, and lifetime of a particular object may vary from one run of the program to another.
+:::
 
 Let's take an example of relationship between Teacher and Student. Multiple students can associate with a single teacher and a single student can associate with multiple teachers. But there is no ownership between the objects and both have their own lifecycle. Both can be created and deleted independently.
 
-![Teacher has an Association with Student](img/association.png)
+![Teacher has an Association with Student](./img/association.png)
 
 Another example could be an Employee who uses instances of the class Company Computer. While the computer objects are owned by the employee's company, he can make use of them.
 
-![Employee uses a Company Computer](img/employee_computer.png)
+![Employee uses a Company Computer](./img/employee_computer.png)
 
 ### Composition
 
@@ -224,13 +230,13 @@ In a composition relationship child objects do not have their own lifecycle. If 
 
 Let's take an example of relationship between a House and a Room. House can contain multiple rooms, but there is no independent life of Room and a Room cannot belong to two different houses. If we destroy the house, the rooms will automatically be destroyed too.
 
-![Composition relationship between House and Room](img/composition.png)
+![Composition relationship between House and Room](./img/composition.png)
 
 So composition implies a relationship where the child cannot exist independent of the parent.
 
 Take for example an object of class Person that is composed of other objects such as a head, two feet, a heart, ... If the person is destroyed his/her limbs and organs also die. This of course does not take into account organ transplantation.
 
-![Person as a Composition](img/person_composition.png)
+![Person as a Composition](./img/person_composition.png)
 
 ### Aggregation
 
@@ -240,11 +246,11 @@ Aggregation implies a relationship where the child can exist independently of th
 
 Let's take an example of a relationship between Department and Teacher. A Teacher may belong to multiple departments. Hence Teacher is a part of a Department. But if we delete a Department object, no Teacher objects will be destroyed.
 
-![Aggregation relationship between Department and Teacher](img/aggregation.png)
+![Aggregation relationship between Department and Teacher](./img/aggregation.png)
 
 Take for example a Car. If the parts of the car can be reused after the car is destroyed, than we can create a Car as an aggregation of Wheels, an Engine, a Radio, ...
 
-![Car as an Aggregation](img/car_aggregation.png)
+![Car as an Aggregation](./img/car_aggregation.png)
 
 ### Summarized
 
