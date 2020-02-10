@@ -6,9 +6,7 @@ title: Abstraction
 
 Humans are curious in nature. However it is impossible for us to know every single thing that is going on.
 
-![Not Knowing [^1]](img/not_knowing.jpg)
-
-[^1]: Source http://www.themeasurementstandard.com/2016/01/cartoon-of-the-month/
+![Not Knowing - Source http://www.themeasurementstandard.com/2016/01/cartoon-of-the-month/](./img/not_knowing.jpg)
 
 The same is valid when designing software. More even when working in team on larger projects. It is not practical to know every little detail that is going on. It's impossible, impractical and even too time-consuming. There is actually no good reason why you should try to know every detail.
 
@@ -23,6 +21,7 @@ The concept of abstraction is to actually **know as little as possible**. All yo
 > John V. Guttag (2013-01-18)
 
 Consider the real-life example of a washing machine. You can perfectly use a washing machine without understanding its internals. All you need to know is the interface it exposes:
+
 * the hole to put the soap in
 * the connection to connect the water hose to
 * what buttons select the washing program
@@ -41,13 +40,11 @@ All programming languages provide abstractions. The actual quality of the abstra
 
 In fact assembly language is an abstraction for machine code which is an abstraction of the actual hardware of a computer system. Which is an abstraction of the electrons moving around.
 
-![Assembler is an abstraction of Machine Code [^2]](img/assembler_abstraction.jpg)
-
-[^2]: Source http://www.androidauthority.com/assembly-language-and-machine-code-678230/
+![Assembler is an abstraction of Machine Code - Source http://www.androidauthority.com/assembly-language-and-machine-code-678230/](./img/assembler_abstraction.jpg)
 
 Many imperative languages that followed (such as Fortran, C, Pascal, ...) were another level of abstraction introduced on top of the assembly language. So basically a computer application is nothing but layer upon layer upon layer of abstraction.
 
-![Layer upon Layer of Abstraction](img/layer_upon_layer.png)
+![Layer upon Layer of Abstraction](./img/layer_upon_layer.png)
 
 ## Advantages of Abstraction
 
