@@ -46,6 +46,10 @@ Many imperative languages that followed (such as Fortran, C, Pascal, ...) were a
 
 ![Layer upon Layer of Abstraction](./img/layer_upon_layer.png)
 
+A nice video about abstraction can be found at Computerphile.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ycl1VL0q1rs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Advantages of Abstraction
 
 For the most part, "knowing" in and of itself isn't necessarily bad, but "not knowing" can have its advantages. One of the main advantages of abstraction is that is let's us build complex systems much faster as we can rest our weary minds about the internals of the libraries, classes, functions, ... that can be used. If the standard libraries of C++ or the standard packages of Java were not there for us, we would still be coding on that first "hello world" program.
